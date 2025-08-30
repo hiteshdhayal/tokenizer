@@ -1,0 +1,128 @@
+body {
+            background-color: black;
+            color: #00ff00; /* Lime green for that CRT monitor feel */
+            font-family: monospace;
+            font-size: 16px;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden; /* To keep the retro contained */
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffff00; /* Yellow for title */
+            text-shadow: 2px 2px #ff0000, -2px -2px #0000ff; /* RGB shadow for 80's vibe */
+            font-size: 36px;
+            margin-bottom: 40px;
+            animation: glitch 1.5s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            60% { transform: translate(-2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            width: 45%;
+            border: 4px solid #ffffff; /* White border for panels */
+            padding: 20px;
+            background-color: #111111; /* Dark gray for panel bg */
+            box-shadow: 0 0 10px #00ff00, 0 0 20px #ff00ff; /* Neon glow */
+        }
+
+        h2 {
+            color: #ff00ff; /* Magenta for section titles */
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px #00ffff; /* Cyan shadow */
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            background-color: #222222;
+            color: #00ff00;
+            border: 2px dashed #ffff00; /* Dashed yellow border for input */
+            font-family: monospace;
+            font-size: 14px;
+            padding: 10px;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        input{
+            
+            width: 100%;
+            height: 150px;
+            background-color: #222222;
+            color: #00ff00;
+            border: 2px dashed #ffff00; /* Dashed yellow border for input */
+            font-family: monospace;
+            font-size: 14px;
+            padding: 10px;
+            resize: none;
+            box-sizing: border-box;
+        }
+        
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff0000; /* Red button */
+            color: #ffffff;
+            border: 3px solid #ffff00; /* Yellow border */
+            font-family: monospace;
+            font-size: 18px;
+            margin: 20px 0;
+            cursor: pointer; /* Even without JS, for feel */
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #00ff00; /* Green on hover */
+            color: #000000;
+        }
+
+        .output {
+            background-color: #333333;
+            color: #ffffff;
+            border: 2px solid #00ffff; /* Cyan for output */
+        }
+
+        /* Retro scanlines for background */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                to bottom,
+                transparent,
+                transparent 1px,
+                rgba(0, 0, 0, 0.1) 1px,
+                rgba(0, 0, 0, 0.1) 2px
+            );
+            pointer-events: none;
+        }
+
+        /* ASCII art for fun, like 80's game loading screen */
+        .ascii-art {
+            text-align: center;
+            color: #ff00ff;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
