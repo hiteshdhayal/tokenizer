@@ -1,0 +1,4 @@
+most important this is always put
+
+<script type="module" src="script.js"></script> 
+type="module"
