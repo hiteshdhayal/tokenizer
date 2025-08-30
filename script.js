@@ -54,10 +54,35 @@
 //     }
 // }
 
- import { Tiktoken } from "js-tiktoken/lite";
-import o200k_base from "js-tiktoken/ranks/o200k_base";
+//  import { Tiktoken } from "js-tiktoken/lite";
+// import o200k_base from "js-tiktoken/ranks/o200k_base";
 
-const enc = new Tiktoken(o200k_base);
+// const enc = new Tiktoken(o200k_base);
+
+//     window.encodeMessage = function() {
+//         const input = document.getElementById('player1-input').value.trim();
+//         if (!input) return;
+//         const encoded = enc.encode(input);
+//         document.getElementById('output1').value = encoded.join(', ');
+//     };
+
+//     window.decodeMessage = function() {
+//         const input = document.getElementById('player2-input').value.trim();
+//         if (!input) return;
+//         try {
+//             const tokenArray = input.split(',').map(x => parseInt(x.trim()));
+//             const decoded = enc.decode(tokenArray);
+//             document.getElementById('output2').value = decoded;
+//         } catch (e) {
+//             document.getElementById('output2').value = "Invalid tokens!";
+//         }
+//     };
+
+
+    import { Tiktoken } from "https://esm.sh/js-tiktoken/lite";
+    import o200k_base from "https://esm.sh/js-tiktoken/ranks/o200k_base";
+
+    const enc = new Tiktoken(o200k_base);
 
     window.encodeMessage = function() {
         const input = document.getElementById('player1-input').value.trim();
