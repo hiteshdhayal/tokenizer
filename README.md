@@ -65,7 +65,7 @@ Simply open `index.html` in your browser (double-click it or use **Live Server**
 
 ---
 
-## 📸 Screenshots
+
 
 ### Main UI
 
